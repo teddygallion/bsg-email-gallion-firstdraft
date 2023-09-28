@@ -1,0 +1,33 @@
+* 
+{ 
+    margin: 0;
+    padding: 0; 
+}
+body{
+    display:flex;
+    flex-direction:column;
+}
+#left-bar{
+border:1px solid black;
+flex-direction:column;
+}
+#search{
+    border:1px solid red;
+}
+#right-bar{
+    border:1px solid blue;
+}
+#left-bar-items{
+    border: 1px solid limegreen;
+    flex-direction:column;
+}
+.inbox-item{
+    border:1px solid purple;
+}
+#inbox-body{
+   border:1px solid orange;
+}
+#right-bar-items{
+    border:1px solid brown;
+    flex-direction:column;
+}
