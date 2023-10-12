@@ -1,59 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href ="styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="style/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href ="styles.css">
+    <script src="https://kit.fontawesome.com/58ae8fb4d5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
         <div class="row">
-            <div class="col-4" id="left-bar">
+            <div class="col-2 col-sm-2 col-mid-2 col-lg-2 col-xl-2" id="left-bar">
                 <h2>left bar</h2>
+                <div class="row" id="compose">
+                    <i class="fas fa-pen"> 
+                       <span>compose</span>
+                   </i>
+               </div>
             </div>
-            <div class="col-6" id="search">
+            <div class="col-8 col-sm-8 col-mid-8 col-lg-8 col-xl-8" id="search">
                 <h2>Search</h2>
             </div>
-            <div class="col-2" id ="right-bar">
-                <h2>right bar</h2>
-            </div>
-          </div>
-        <div class="row">
-            <div class="row" id="left-bar-items">
-                <button>compose</button>
-                <button>primary</button>
-                <button>promotions</button>
-                <button>important</button>
-                <button>spam</button>
-            </div>
-            <div class='col-8' id="inbox-body">
-                <div class="inbox-item">
-                    <h4>subject</h4>
-                    <p><span id="sender">sender</span> <span>date</span></p>
-                </div>
-                <div class="inbox-item">
-                    <h4>subject</h4>
-                    <p><span id="sender">sender</span> <span>date</span></p>
-                </div>
-                <div class="inbox-item">
-                    <h4>subject</h4>
-                    <p><span id="sender">sender</span> <span>date</span></p>
-                </div>
-                <div class="inbox-item">
-                    <h4>subject</h4>
-                    <p><span id="sender">sender</span> <span>date</span></p>
-                </div>
-                <div class="inbox-item">
-                    <h4>subject</h4>
-                    <p><span id="sender">sender</span> <span>date</span></p>
-                </div>
-        </div>
-        <div class="col-1">
-            <div class="row" id="right-bar-items">
-                <button>hi</button>
-                <button>hi</button>
-                <button>hi</button>
-                <button>hi</button>
+            <div class="col-2 col-sm-2 col-mid-2 col-lg-2 col-xl-2" id ="right-bar">
+
+                <i id ="hamburger" class="fas fa-bars"></i>
             </div>
         </div>
+        <div class="body-container">
+            <div class="col-2 col-sm-2 col-mid-2 col-lg-2 col-xl-2" id="left-bar-items">
+                <div class="row"> 
+                    <i class="fas fa-inbox">
+                        <span>primary</span>
+                    </i> 
+                </div>
+                <div class="row"> 
+                    <i class="fas fa-star"> 
+                        <span>important</span>
+                    </i> 
+                </div>
+                <div class="row">
+                    <i class="fas fa-briefcase">
+                       <span>Work</span>
+                    </i>
+                </div>
+                <div class="row"> 
+                    <i class="fas fa-dumpster-fire">
+                        <span>spam</span>
+                    </i> 
+                </div>   
+            </div>
+        <div class='col-6 col-sm-6 col-mid-6 col-lg-6 col-xl-6' id="inbox-body">
+            <div class="inbox-item">
+               <h4>Subject</h4>
+                <h4>Date</h4>
+               <h5>Sender</h5>
+               <div class="email-options">
+                <!-- put reply, forward, archive, delete buttons here-->
+                <button>hi</button>
+                <button>hi</button>
+                <button>hi</button>
+                <button>hi</button>
+               </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat arcu at arcu cursus...</p>
+            </div>
+            <div class="inbox-item">
+                <h4>Subject</h4>
+                 <h4>Date</h4>
+                <h5>Sender</h5>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat arcu at arcu cursus...</p>
+             </div>
+             <div class="inbox-item">
+                <h4>Subject</h4>
+                 <h4>Date</h4>
+                <h5>Sender</h5>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat arcu at arcu cursus...</p>
+             </div>
+             <div class="inbox-item">
+                <h4>Subject</h4>
+                 <h4>Date</h4>
+                <h5>Sender</h5>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat arcu at arcu cursus...</p>
+             </div>
         </div>
-    </body>
+        <div class="col-2" id="right-bar-items">
+            <div id="right-bar-container">
+
+                <div class="row">
+                    <i class="fas fa-users"></i>
+                    <span>Contacts</span>
+                </div>
+                <div class="row">
+                    <i class="fas fa-calendar"></i>
+                    <span>Calendar</span>
+                </div>
+                <div class="row">
+                    <i class="fas fa-list"></i>
+                    <span>To Do List</span>
+                </div>
+                <div class="row">
+                    <i class="fas fa-cloud"></i>
+                    <span>CrowCloud</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="col">
+            <p>&copy;Teddybob, 2023</p>
+        </div>
+    </footer>
+</body>
 </html>
